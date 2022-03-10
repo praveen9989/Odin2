@@ -5,7 +5,7 @@ timestamps {
 node () {
 
 	stage ('Cube - Checkout') {
- 	 checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'git-crendetials', url: 'https://github.com/ajaykumar011/CubeCreatorWeb.git']]]) 
+ 	 checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'git-crendetials', url: 'https://github.com/ajaykumar011/Odin.git']]]) 
 	}
 	stage ('Cube - Build') {
  	
